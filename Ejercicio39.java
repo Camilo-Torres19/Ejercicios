@@ -1,23 +1,23 @@
 import java.util.Scanner;
 public class Ejercicio39 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int anioNac, anioActual, diasVividos, edad ;
+        Scanner leer = new Scanner(System.in);
+        int año_nac, año_actual, diasVividos, edad ;
         String nombre;
         double diaDormidos;
 
         System.out.print("Ingresa el año actual: ");
-        anioActual = sc.nextInt();
+        año_actual = leer.nextInt();
         System.out.print("Ingresa el año de nacimiento: ");
-        anioNac = sc.nextInt();
+        año_nac = leer.nextInt();
         System.out.print("Ingrese el nombre: ");
-        nombre = sc.next();
-        sc.close();
+        nombre = leer.next();
 
-        edad = anioActual - anioNac;
+        edad = año_actual - año_nac;
         diasVividos = edad * 365;
         diaDormidos = diasVividos * 0.34;
-
+        System.out.println("________________________________________________________________________________");
         System.out.println(nombre + " ha dormido a lo largo de su vida aproximadamente "+ diaDormidos +" dias");
+        leer.close();
     }
 }

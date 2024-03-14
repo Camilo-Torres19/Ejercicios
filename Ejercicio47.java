@@ -3,22 +3,22 @@ import java.util.Scanner;
 public class Ejercicio47 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double porcentajeDescontado, precioCompra, precioPagado, cantComprada;
+        double porcentaje_Descontado, precio_Compra, precio_Pagado, cant_Comprada;
 
-        System.out.print("Ingresa la cantidad de la compra:");
-        cantComprada = sc.nextDouble();
-        System.out.print("Ingresa el precio (Valor) de la compra: ");
-        precioCompra = sc.nextDouble();
-        System.out.print("Ingresa el Precio Pagado por la compra");
-        precioPagado = sc.nextDouble();
+        System.out.print("Inserte la cantidad de la compra: ");
+        cant_Comprada = sc.nextDouble();
+        System.out.print("Digite el precio de la compra: ");
+        precio_Compra = sc.nextDouble();
+        System.out.print("Digite el Precio Pagado por la compra: ");
+        precio_Pagado = sc.nextDouble();
         sc.close();
 
-        porcentajeDescontado = ((precioCompra-precioPagado)/precioCompra)*100; 
+        porcentaje_Descontado = ((precio_Compra-precio_Pagado)/precio_Compra)*100; 
     
-        double precioCompraxUnidad = precioCompra / cantComprada;
-        double precioPagadoxUnidad = precioPagado / cantComprada;
+        double precioCompraxUnidad = precio_Compra / cant_Comprada;
+        double precioPagadoxUnidad = precio_Pagado / cant_Comprada;
         System.out.println("El precio de compra por unidad es: "+ precioCompraxUnidad);
         System.out.println("EL precio pagado por unidad es: "+ precioPagadoxUnidad);
-        System.out.println("EL porcentaje descontado es de "+ String.format("%.2f", porcentajeDescontado)+"%");
+        System.out.println("EL porcentaje descontado es de "+ String.format("%.2f", porcentaje_Descontado)+"%");
     }
 }
