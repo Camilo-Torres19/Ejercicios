@@ -19,6 +19,6 @@ public class Ejercicio47 {
         double precioPagadoxUnidad = precio_Pagado / cant_Comprada;
         System.out.println("El precio de compra por unidad es: "+ precioCompraxUnidad);
         System.out.println("EL precio pagado por unidad es: "+ precioPagadoxUnidad);
-        System.out.println("EL porcentaje descontado es de "+ String.format("%.2f", porcentaje_Descontado)+"%");
+        System.out.println("EL porcentaje descontado es de: "+ porcentaje_Descontado+"%");
     }
 }
