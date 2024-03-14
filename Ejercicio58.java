@@ -2,17 +2,17 @@ import java.util.Scanner;
 
 public class Ejercicio58 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        double horasTrab, tarifaPorHoras, salario;
+        Scanner leer = new Scanner(System.in);
+        double horas_Trab, tarifa_Horas, salario;
 
         System.out.print("Ingresa el numero de horas trabajadas: ");
-        horasTrab = sc.nextDouble();
+        horas_Trab = leer.nextDouble();
 
         System.out.println("Ingrese la tarifa por hora trabajada");
-        tarifaPorHoras = sc.nextDouble();
-        sc.close();
+        tarifa_Horas = leer.nextDouble();
+        leer.close();
 
-        salario = tarifaPorHoras * horasTrab;
+        salario = tarifa_Horas * horas_Trab;
 
         System.out.println("El salario del trabajador es igual a $"+salario);
     } 

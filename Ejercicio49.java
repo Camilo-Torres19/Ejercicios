@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class Ejercicio49 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner leer = new Scanner(System.in);
         String cadenaDeTexto;
         char primeraLetra;
 
         System.out.println("Ingrese una cadena de texto");
-        cadenaDeTexto = sc.nextLine();
-        sc.close();
+        cadenaDeTexto = leer.nextLine();
+        leer.close();
 
         primeraLetra = devolverPrimeraLetra(cadenaDeTexto);
 
